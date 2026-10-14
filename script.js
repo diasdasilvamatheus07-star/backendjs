@@ -84,7 +84,7 @@ adicionarCor("verde");
 adicionarCor("azul");
 proximaCor = 3;
 
-document.querySelector("#btn-adionar").addEventListener("click", () => {
+document.querySelector("#btn-adicionar").addEventListener("click", () => {
     adicionarCor(cores[proximaCor % cores.length]);
     proximaCor++;
 });

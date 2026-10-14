@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <title></title>
+        <title>Demonstração do DOM</title>
     </head>
     <body>
         <main>
@@ -13,39 +13,46 @@
             <!-- Menu -->
             <nav>
                 <button class="ativo" data-pagina="pagina-texto">Texto e Estilo</button>
-                <button cata-pagina="pagina-lista">Criar Elementos</button>
+                <!--  CORRIGIDO: de cata-pagina para data-pagina -->
+                <button data-pagina="pagina-lista">Criar Elementos</button>
                 <button data-pagina="pagina-form">Ler o que foi digitado</button>
             </nav>
 
             <!-- PÁGINA 1: alterar texto e estilo -->
-            <section id="pagina-texto" class="pagina-visivel">
+            <!--  CORRIGIDO: de pagina-visivel para class="pagina visivel" para funcionar com o seu JS -->
+            <section id="pagina-texto" class="pagina visivel">
                 <p class="texto">Primeiro parágrafo.</p>
                 <p class="texto">Segundo parágrafo.</p>
 
-                <div classs="linha">
+                <!--  CORRIGIDO: de classs para class -->
+                <div class="linha">
                     <button id="btn-mudar-titulo">Mudar o título</button>
                     <button id="btn-maiusculas">Parágrafo em maiúsculas</button>
                     <button id="btn-destaque">Ligar/desligar destaque</button>
                     <button id="btn-escuro">Modo Escuro</button>
                 </div>
             </section>
+
             <!-- PÁGINA 2: criar e remover elementos -->
              <section id="pagina-lista" class="pagina">
                 <h2>Lista de cores</h2>
-                <ul id="Lista"></ul>
+                <!--  CORRIGIDO: de id="Lista" para id="lista" (L minúsculo) -->
+                <ul id="lista"></ul>
                 <div class="linha">
                     <button id="btn-adicionar">Adicionar cor</button>
                     <button id="btn-limpar">Limpar lista</button>
                 </div>
              </section>
          
-                <!--PAGINA 3: ler o valor de um campo-->
+            <!-- PAGINA 3: ler o valor de um campo -->
              <section id="pagina-form" class="pagina">
                 <h2>Diga seu nome</h2>
                 <div class="linha">
                     <input id="campo-nome" placeholder="Seu nome">
                 </div>
-        
+                <!--  CORRIGIDO: Adicionado as tags para a saudação e o contador que o JS procurava -->
+                <p id="saudacao">Digite algo no campo acima.</p>
+                <p id="contador">Letras: 0</p>
             </section>             
         </main>
         <script src="script.js"></script>
