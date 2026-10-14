@@ -46,7 +46,7 @@ document.querySelector("#btn-destaque").addEventListener("click", () => {
 });
 
 // Modo escuro: liga desliga a classe "escuro" no body
-const  botoeEscuro = document.querySelector("#btn-escuro");
+const  botaoEscuro = document.querySelector("#btn-escuro");
 botaoEscuro.addEventListener("click", () => {
     document.body.classList.toggle("escuro");
 

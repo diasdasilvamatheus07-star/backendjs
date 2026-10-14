@@ -1,3 +1,41 @@
-.h1{
-    text-decoration-color: blue;
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(158, 175, 189);
+    color: rgb(11, 11, 46);
+    margin: 0;
+    line-height: 1.6;
 }
+main{
+    max: width 640px;
+    margin: 32px auto;
+    padding: 24px;
+    background: #fff;
+    border-left: 6px solid #595dae;
+}
+h1{margin-top: 0;}
+h2{font-size: 1.2rem;margin-top: 32px;}
+nav {display:flex;gap: 8px; margin-bottom: 24px; flwx-wrap;}
+button,input {
+    font: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 8px 12px;
+}
+button{
+    background: #636476;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+}
+button:hover {background: #383176;}
+nav button {background: #0c0741;}
+nav button.ativo {background: #156ecd; color: aquamarine;}
+li{padding: 4px 0;} 
+li button {margin-left: 8px; padding: 2px 8px; font-size: 13px; background: #612323;}
+.linha{display: flex;gap: 8px; flex-wrap: wrap;margin: 8px 0;}
+
+/*clase ligada e desligada pelo javascript*/
+.destaque {background: #2e3d4d; padding: 4px 8px;}
+
+/*Modo escuro: o javascript coloca esta classe no body*/
+body.escuro{background: #010e1c; color: aqua;}
